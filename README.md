@@ -1,12 +1,17 @@
 # drupal-ის დაყენება 
 
 1. cd drupal-ის დირექტორიაში და composer install შემდეგ docker-compose up -d;
+
 2. http://localhost:8000 > Save and continue > Standard > Database name:drupal, username:drupal, password:drupal
 Host : mariadb > დაასრულე კონფიგურაცია;
+
 3. შემდეგ გახსენი დოკერი Containers>drupal-master>my_drupal9_project_php> CLI და ჯერ 
 drush config-set "system.site" uuid 292ad122-b429-43da-bff8-28b6a4cf89e3
+
 შემდეგ drush -y entity:delete shortcut_set
+
 შემდეგ drush cim -y
+
 4. შემდეგ გადადი დრუპალში და დაამატე კონტენტი სურათით ტიტლით და ტექსტით შემდეგ გაუშვი nextjs-ს
 
 
